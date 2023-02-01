@@ -1,12 +1,11 @@
 var express = require('express');
 
 var app = express();
-var
 
 app.get('*', (req, res) => {
     res.header('Content-Type', 'text/html;charset=utf-8')
     console.log('test');
-
+    var;
     res.send(`<!DOCTYPE html>
     <html>
     
