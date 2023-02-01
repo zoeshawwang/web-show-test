@@ -2,10 +2,16 @@ var express = require('express');
 
 var app = express();
 
+function sleep(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}
+
 app.get('*', (req, res) => {
     res.header('Content-Type', 'text/html;charset=utf-8')
     console.log('test');
-    var;
+    await sleep(100000);
     res.send(`<!DOCTYPE html>
     <html>
     
