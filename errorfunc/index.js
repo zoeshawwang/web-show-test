@@ -8,7 +8,7 @@ function sleep(ms) {
   });
 }
 
-app.get('*', (req, res) => {
+app.get('*', async (req, res) => {
     res.header('Content-Type', 'text/html;charset=utf-8')
     console.log('test');
     await sleep(100000);
