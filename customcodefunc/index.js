@@ -4,7 +4,7 @@ var app = express();
 
 app.get('*', (req, res) => {
     res.header('Content-Type', 'text/html;charset=utf-8')
-    res.header('Status', 500)
+    res.header('StatusCode', 500)
     console.log('test');
 
     res.send(`<!DOCTYPE html>
